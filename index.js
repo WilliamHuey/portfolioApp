@@ -1,12 +1,14 @@
 var express = require('express'),
     //home = require('./routes/home.js'),
-    path = require('path');
+    path = require('path'),
+    stylus = require('stylus');
 
 var app = express();
 
 app.configure(function(){
    app.set('view engine', 'jade');
    app.set('views', __dirname + '/views');
+   app.use(stylus.middleware(__dirname + '/public'));
    app.use(express.static(path.join(__dirname, 'public')));
 });
 
