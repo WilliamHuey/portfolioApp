@@ -3,4 +3,5 @@ body,html{width:100%;font-size:100%;background-color:#fafafa}
 .header{width:100%;min-height:80px;background-color:#525252;border-bottom:solid 1px #a9a9a9}
 .header-horizontal-line{position:absolute;height:1px;background-color:#f00}
 .shadow{-moz-box-shadow:inset 0 0 10px #000;-webkit-box-shadow:inset 0 0 10px #000;-webkit-box-shadow:inset 0 0 10px #000;box-shadow:inset 0 0 10px #000}
-.central-body{background-color:#ff0}
+.header-links{width:62.5em;margin:auto;border:solid 1px #808080}
+.central-body{background-color:#fff;width:62.5em}
