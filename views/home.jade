@@ -5,12 +5,20 @@ html(lang="en)
         title Home Page
         != css('foundation.min')
         != css('home')
-
-        //script(src="/scripts/vendor/jquery-1.8.3.min.js")
-        //script(src="/scripts/home.js")
+        != js('app')
     body
         .row.header.shadow
             .header-horizontal-line
         .row.central-body
+            .row
+                .twelve.columns
+                    .four.columns
+                        p one
+                    .four.columns
+                        p two
+                    .four.columns
+                        p three
+
+
 
 
