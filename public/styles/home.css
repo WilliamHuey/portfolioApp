@@ -1,8 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-html,
 body {
-  font-size: 100%;
+  width: 100%;
+  background-color: #d3d3d3;
+}
+#some {
+  width: 100%;
+}
+#another {
+  width: 100%;
+}
+#when {
+  width: 100%;
 }
