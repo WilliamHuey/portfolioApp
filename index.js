@@ -1,13 +1,8 @@
-var express = require('express');
+var express = require('express'),
+    home = require('./routes/home.js');
 
 var app = express();
 
-app.get('/', function(req,res){
-   res.send('Welcome to express');
-});
-
-app.get('/customers', function(req,res){
-    res.send('Customer area');
-});
+app.get('/', home.index);
 
 app.listen(3000);
