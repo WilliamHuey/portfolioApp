@@ -1,12 +1,17 @@
 var express = require('express'),
     //home = require('./routes/home.js'),
     path = require('path'),
-    stylus = require('stylus');
+    stylus = require('stylus'),
+    nib = require('nib');
 
 var app = express();
 
 function compile(str, path) {
-    return stylus(str);
+    return stylus(str)
+        .set('filename', path)
+        .set('compress', true)
+        .use(nib())
+        .import('nib');
 }
 
 app.configure(function(){

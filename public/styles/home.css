@@ -1,13 +1,4 @@
-body {
-  width: 100%;
-  background-color: #d3d3d3;
-}
-#some {
-  width: 100%;
-}
-#another {
-  width: 100%;
-}
-#when {
-  width: 100%;
-}
+body{width:100%;background-color:#d3d3d3}
+#some{width:100%}
+#another{width:100%}
+#when{width:100%}
