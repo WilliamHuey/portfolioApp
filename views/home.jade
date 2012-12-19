@@ -3,10 +3,9 @@ html(lang="en)
     head
         meta(charset='utf-8')
         title Home Page
-        link(href="/styles/vendor/foundation.min.css", rel="stylesheet", type="text/css")
-        link(href="/styles/home.css", rel="stylesheet", type="text/css")
-        //script(src="/scripts/vendor/jquery-1.8.3.min.js")
-        script(src="/scripts/home.js")
+        != css('foundation.min')
+        != css('home')
+        != js('app')
     body
         .row.header.shadow
             .header-links

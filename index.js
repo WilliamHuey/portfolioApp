@@ -2,7 +2,8 @@ var express = require('express'),
     //home = require('./routes/home.js'),
     path = require('path'),
     stylus = require('stylus'),
-    nib = require('nib');
+    nib = require('nib'),
+    connectAssets = require('connect-assets');
 
 var app = express();
 
@@ -18,6 +19,7 @@ app.configure(function(){
    app.set('view engine', 'jade');
    app.set('views', __dirname + '/views');
    app.use(stylus.middleware({src: __dirname + '/public', compile : compile}));
+   app.use(connectAssets());
    app.use(express.static(path.join(__dirname, 'public')));
 });
 
